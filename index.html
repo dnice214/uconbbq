@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#FBF3E4">
 <title>Home · 2026 UCON BBQ &amp; Chili Cook-Off</title>
-<meta name="description" content="2026 UCON Annual BBQ & Chili Cook-Off — From Campfire to Cook-Off. August 6, 2026 at the Alameda County Fairgrounds (Walnut Grove), Pleasanton, CA. UCON's most-loved tradition since 1980.">
+<meta name="description" content="2026 UCON Annual BBQ & Chili Cook-Off, From Campfire to Cook-Off. August 6, 2026 at the Alameda County Fairgrounds (Walnut Grove), Pleasanton, CA. UCON's most-loved tradition since 1980.">
 <link rel="canonical" href="https://EVENT-DOMAIN.org/">
 <meta property="og:title" content="2026 UCON Annual BBQ &amp; Chili Cook-Off">
 <meta property="og:description" content="From Campfire to Cook-Off · August 6, 2026 · Alameda County Fairgrounds (Walnut Grove), Pleasanton, CA.">
@@ -18,18 +18,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database-compat.js"></script>
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Event","name":"2026 UCON Annual BBQ & Chili Cook-Off","startDate":"2026-08-06T16:30:00-07:00","endDate":"2026-08-06T20:00:00-07:00","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"Alameda County Fairgrounds (Walnut Grove)","address":{"@type":"PostalAddress","streetAddress":"4501 Pleasanton Ave, Gate 8","addressLocality":"Pleasanton","addressRegion":"CA","postalCode":"94566","addressCountry":"US"}},"image":"https://EVENT-DOMAIN.org/assets/bbq-2026-logo.jpg","description":"2026 UCON Annual BBQ & Chili Cook-Off — From Campfire to Cook-Off. August 6, 2026 at the Alameda County Fairgrounds (Walnut Grove), Pleasanton, CA. UCON's most-loved tradition since 1980.","organizer":{"@type":"Organization","name":"United Contractors (UCON)","url":"https://www.unitedcontractors.org"}}
+{"@context":"https://schema.org","@type":"Event","name":"2026 UCON Annual BBQ & Chili Cook-Off","startDate":"2026-08-06T16:30:00-07:00","endDate":"2026-08-06T20:00:00-07:00","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"Alameda County Fairgrounds (Walnut Grove)","address":{"@type":"PostalAddress","streetAddress":"2005 Valley Avenue, Gate 8","addressLocality":"Pleasanton","addressRegion":"CA","postalCode":"94566","addressCountry":"US"}},"image":"https://EVENT-DOMAIN.org/assets/bbq-2026-logo.jpg","description":"2026 UCON Annual BBQ & Chili Cook-Off, From Campfire to Cook-Off. August 6, 2026 at the Alameda County Fairgrounds (Walnut Grove), Pleasanton, CA. UCON's most-loved tradition since 1980.","organizer":{"@type":"Organization","name":"United Contractors (UCON)","url":"https://www.unitedcontractors.org"}}
 </script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 <header class="nav-over-hero">
 <nav aria-label="Main navigation">
-  <a class="nav-logo" href="index.html" aria-label="BBQ &amp; Chili Cook-Off — home">
+  <a class="nav-logo" href="index.html" aria-label="BBQ &amp; Chili Cook-Off, home">
     <img src="assets/bbq-2026-logo.jpg" alt="2026 UCON BBQ &amp; Chili Cook-Off">
     <span class="nav-logo-text">BBQ &amp; Chili Cook-Off<span>Aug 6, 2026 · Pleasanton</span></span>
   </a>
@@ -54,7 +56,7 @@
     <a class="nav-btn" data-nav="faq.html" href="faq.html">FAQ</a>
     <a class="register-btn" href="https://www.unitedcontractors.org/event-registration/2026-annual-bbq-registration">Get tickets</a>
   </div>
-  <a class="nav-ucon-logo" href="https://www.unitedcontractors.org" target="_blank" rel="noopener" aria-label="United Contractors — event organizer"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/v1777169497/UnitedContractorsLogo_zf9ekd.png" alt="United Contractors (UCON)"></a>
+  <a class="nav-ucon-logo" href="https://www.unitedcontractors.org" target="_blank" rel="noopener" aria-label="United Contractors, event organizer"><img src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/v1777169497/UnitedContractorsLogo_zf9ekd.png" alt="United Contractors (UCON)"></a>
   <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
@@ -72,15 +74,17 @@
 <main id="main-content">
 <section class="video-hero">
   <video class="event-video hero-bg-video" autoplay muted loop playsinline preload="metadata" poster="https://res.cloudinary.com/dhqtiaubo/video/upload/so_2,q_auto/v1780695163/Join_Us_August_6_2026_oanbdq.jpg" aria-hidden="true" tabindex="-1">
-    <source src="https://res.cloudinary.com/dhqtiaubo/video/upload/q_auto/f_auto/w_1920,c_limit/v1780695163/Join_Us_August_6_2026_oanbdq.mp4" type="video/mp4">
+    <source src="https://res.cloudinary.com/dhqtiaubo/video/upload/q_auto/v1780695163/Join_Us_August_6_2026_oanbdq.webm" type="video/webm">
+    <source src="https://res.cloudinary.com/dhqtiaubo/video/upload/q_auto/v1780695163/Join_Us_August_6_2026_oanbdq.mp4" type="video/mp4">
   </video>
   <div class="hero-scrim"></div>
   <div class="hero-content">
-    <h1 class="sr-only">2026 UCON Annual BBQ &amp; Chili Cook-Off — From Campfire to Cook-Off</h1>
+    <h1 class="sr-only">2026 UCON Annual BBQ &amp; Chili Cook-Off, From Campfire to Cook-Off</h1>
+    <img class="hero-ucon-logo" src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto,f_auto,e_make_transparent:10/v1782328052/UnitedContractorsLogo_872_Horizontal_wyoasb.tiff" alt="United Contractors (UCON)" loading="eager">
     <div class="hero-script">From Campfire to Cook-Off</div>
     <div class="hero-title">2026 BBQ &amp; Chili Cook-Off</div>
     <p class="hero-badge-statement">California's largest gathering of union contractors &amp; industry affiliates</p>
-    <p class="hero-tagline">Since 1980, the event where the people who build California come together — ~1,200 contractors, tradespeople, and industry partners for an evening of great food, fierce chili competition, and real community.</p>
+    <p class="hero-tagline">The biggest BBQ in California construction. Over 1,200 contractors, tradespeople, and industry partners. August 6 at the Alameda County Fairgrounds. 46 summers of smoke, competition, and the best networking you'll do all year.</p>
     <div class="hero-btns">
       <a class="btn btn-primary" href="https://www.unitedcontractors.org/event-registration/2026-annual-bbq-registration">Get your tickets</a>
       <a class="btn btn-hero-outline" href="chili-cookoff.html">About the Chili Cook-Off</a>
@@ -126,28 +130,88 @@
         <button onclick="spollVote(4)">21–40 times</button>
         <button onclick="spollVote(5)">40+ times</button>
       </div>
-      <div id="spollResults" style="display:none"></div>
+      <div id="spollResults" aria-live="polite" style="display:none"></div>
     </div>
   </div>
 </section>
 <script>
 (function(){
-  var BASE=[84,231,172,118,61,21];
   var LABELS=['First timer','2–5 times','6–10 times','11–20 times','21–40 times','40+ times'];
-  var MSGS=['Welcome — you\'re in for something special.','A few years in. You know what you\'re getting into.','Officially a regular. See you around the fire.','A decade-plus of chili and community. We appreciate you.','A true UCON stalwart. See you again this August.','A legend. Thank you for 40+ years of showing up.'];
+  var MSGS=['Welcome! You\'re in for something special.','A few years in. You know what you\'re getting into.','Officially a regular. Save us a plate.','A decade-plus of chili and community. We appreciate you.','A true UCON stalwart. See you again this August.','A legend. Thank you for 40+ years of showing up.'];
+  var SEED=[84,231,172,118,61,21];
   var KEY='ucon_bbq_attendance_2026';
+
+  var firebaseConfig={
+    apiKey:"AIzaSyBR-6vu0rKp_9XsvV4CZ7nSfqaFfB4P98o",
+    authDomain:"ucon-bbq-2026.firebaseapp.com",
+    databaseURL:"https://ucon-bbq-2026-default-rtdb.firebaseio.com",
+    projectId:"ucon-bbq-2026",
+    storageBucket:"ucon-bbq-2026.firebasestorage.app",
+    messagingSenderId:"501329164068",
+    appId:"1:501329164068:web:2cf7214b97d8a6090ee5b1"
+  };
+
+  var db=null;
+  var pollRef=null;
+  var firebaseOk=false;
+
+  try{
+    if(!firebase.apps.length){firebase.initializeApp(firebaseConfig);}
+    db=firebase.database();
+    pollRef=db.ref('poll_votes');
+    firebaseOk=true;
+  }catch(e){
+    console.warn('Firebase init failed, using localStorage fallback.',e);
+  }
+
   var saved=localStorage.getItem(KEY);
-  if(saved!==null){spollShow(parseInt(saved,10),false);}
-  window.spollVote=function(idx){localStorage.setItem(KEY,idx);spollShow(idx,true);};
-  function spollShow(myPick,animate){
+
+  if(firebaseOk){
+    try{
+      pollRef.once('value').then(function(snap){
+        var data=snap.val();
+        if(!data){
+          var seed={};SEED.forEach(function(v,i){seed[i]=v;});
+          try{pollRef.set(seed);}catch(e){}
+          data=seed;
+        }
+        if(saved!==null){spollShow(parseInt(saved,10),false,data);}
+      }).catch(function(e){
+        console.warn('Firebase read failed, using localStorage fallback.',e);
+        if(saved!==null){spollShow(parseInt(saved,10),false,null);}
+      });
+    }catch(e){
+      console.warn('Firebase once() failed.',e);
+      if(saved!==null){spollShow(parseInt(saved,10),false,null);}
+    }
+  }else{
+    if(saved!==null){spollShow(parseInt(saved,10),false,null);}
+  }
+
+  window.spollVote=function(idx){
+    localStorage.setItem(KEY,idx);
+    if(firebaseOk&&pollRef){
+      try{
+        pollRef.child(String(idx)).transaction(function(c){return(c||0)+1;}).then(function(){
+          pollRef.once('value').then(function(snap){spollShow(idx,true,snap.val());}).catch(function(){spollShow(idx,true,null);});
+        }).catch(function(){spollShow(idx,true,null);});
+      }catch(e){
+        spollShow(idx,true,null);
+      }
+    }else{
+      spollShow(idx,true,null);
+    }
+  };
+
+  function spollShow(myPick,animate,counts){
     var opts=document.getElementById('spollOpts');
     var res=document.getElementById('spollResults');
     opts.querySelectorAll('button').forEach(function(b,i){b.disabled=true;if(i===myPick)b.classList.add('voted');});
-    var counts=BASE.slice();counts[myPick]+=1;
-    var total=counts.reduce(function(a,b){return a+b;},0);
+    var arr=SEED.map(function(_,i){return counts&&counts[i]!=null?counts[i]:SEED[i];});
+    var total=arr.reduce(function(a,b){return a+b;},0);
     var html='<div class="spoll-results">';
-    counts.forEach(function(c,i){
-      var pct=Math.round(c/total*100);
+    arr.forEach(function(c,i){
+      var pct=total>0?Math.round(c/total*100):0;
       html+='<div class="spoll-bar-row"><div class="spoll-bar-lbl">'+LABELS[i]+'</div>';
       html+='<div class="spoll-bar-track"><div class="spoll-bar-fill'+(i===myPick?' mine':'')+'" data-w="'+pct+'"></div></div>';
       html+='<div class="spoll-bar-pct">'+pct+'%</div></div>';
@@ -162,23 +226,22 @@
 <section class="tint-sage">
   <div class="container">
     <div class="section-label"><span class="dot"></span><span>2026 additions</span></div>
-    <h2 class="section-title">What's New This Year</h2>
-    <p class="section-sub">Every year we make it better. Here's what's coming to the 2026 BBQ.</p>
+    <h2 class="section-title">New at Camp This Year</h2>
     <div class="card-grid" style="margin-top:32px;">
       <div class="feature-card">
         <div class="feature-ico ember"><i class="ti ti-tent" aria-hidden="true"></i></div>
-        <h3>Welcome Tent</h3>
-        <p>New for 2026 — a dedicated welcome area at Gate 8 where you can check in, grab a program, and meet the UCON team before heading in.</p>
+        <h3>UCON Welcome Tent</h3>
+        <p>Check in and grab your wristband at the new UCON Welcome Tent right at Gate 8. Staff on hand, signage up. You'll know exactly where to go.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-ico gold"><i class="ti ti-chef-hat" aria-hidden="true"></i></div>
+        <h3>Food Stations</h3>
+        <p>No buffet line this year. Food stations replace the traditional buffet, so you grab what you want, when you want it. More options, less waiting.</p>
       </div>
       <div class="feature-card">
         <div class="feature-ico"><i class="ti ti-volleyball" aria-hidden="true"></i></div>
-        <h3>Camp Games</h3>
-        <p>Lawn games and friendly competition throughout the evening. Cornhole, bocce, and more — bring your competitive side.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-ico gold"><i class="ti ti-truck" aria-hidden="true"></i></div>
-        <h3>Food Trucks</h3>
-        <p>Beyond the legendary BBQ buffet, specialty food trucks are joining the lineup for 2026. More options, more flavor.</p>
+        <h3>Camp-Style Games</h3>
+        <p>Cornhole, lawn games, and more set up across the grounds. Great way to kill time between chili tastings or just take a break from networking.</p>
       </div>
     </div>
   </div>
@@ -205,30 +268,39 @@
             <div>
               <div class="ec-lbl">Where</div>
               <div class="ec-val">Alameda County Fairgrounds <span class="ec-badge">New entrance</span></div>
-              <div class="ec-addr">Walnut Grove · Gate 8 · 4501 Pleasanton Ave, Pleasanton, CA 94566</div>
+              <div class="ec-addr">Walnut Grove · Gate 8 · 2005 Valley Avenue, Pleasanton, CA 94566</div>
             </div>
           </div>
         </div>
         <div class="ec-actions">
-          <a class="btn btn-primary" href="https://outlook.live.com/calendar/0/deeplink/compose?subject=2026+UCON+Annual+BBQ+%26+Chili+Cook-Off&startdt=2026-08-06T16%3A30%3A00-07%3A00&enddt=2026-08-06T20%3A00%3A00-07%3A00&location=4501+Pleasanton+Ave%2C+Pleasanton%2C+CA+94566&body=From+Campfire+to+Cook-Off+%E2%80%94+UCON%27s+annual+BBQ+%26+Chili+Cook-Off.+unitedcontractors.org" target="_blank" rel="noopener"><i class="ti ti-calendar-plus" aria-hidden="true"></i> Add to calendar</a>
-          <a class="btn btn-outline" href="https://maps.google.com/?q=4501+Pleasanton+Ave,+Pleasanton,+CA+94566" target="_blank" rel="noopener"><i class="ti ti-map-2" aria-hidden="true"></i> Get directions</a>
+          <a class="btn btn-primary" href="https://outlook.live.com/calendar/0/deeplink/compose?subject=2026+UCON+Annual+BBQ+%26+Chili+Cook-Off&startdt=2026-08-06T16%3A30%3A00-07%3A00&enddt=2026-08-06T20%3A00%3A00-07%3A00&location=4501+Pleasanton+Ave%2C+Pleasanton%2C+CA+94566&body=From+Campfire+to+Cook-Off%2C+UCON%27s+annual+BBQ+%26+Chili+Cook-Off.+unitedcontractors.org" target="_blank" rel="noopener"><i class="ti ti-calendar-plus" aria-hidden="true"></i> Add to calendar</a>
+          <a class="btn btn-outline" href="https://maps.google.com/?q=2005+Valley+Ave,+Pleasanton,+CA+94566" target="_blank" rel="noopener"><i class="ti ti-map-2" aria-hidden="true"></i> Get directions</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<section style="padding:0 0 60px;">
+  <div class="container">
+    <div class="section-label" style="margin-bottom:16px;"><span class="dot"></span><span>Fairgrounds map</span></div>
+    <div style="border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);">
+      <img src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/v1782262884/UCON_BBQ_Map_jnbrfs.png" alt="Alameda County Fairgrounds: UCON BBQ event map showing parking, entrance, and event areas" loading="lazy" style="width:100%;display:block;">
+    </div>
+    <p style="margin-top:10px;font-size:13px;color:var(--mut);text-align:center;">Enter via Valley Avenue, Gate 8 &middot; Walnut Grove, Alameda County Fairgrounds, Pleasanton</p>
+  </div>
+</section>
+
 <a class="home-banner" href="photos.html" aria-label="See more photos from the BBQ">
-  <img loading="lazy" src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/w_1000,c_limit/v1780697127/UCON-2025-BBQ-249-2438_rfnsq9.jpg" alt="">
-  <img loading="lazy" src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/w_1000,c_limit/v1780697009/UCON-2025-BBQ-222-2338_bababa.jpg" alt="">
-  <img loading="lazy" src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/w_1000,c_limit/v1780696835/UCON-2025-BBQ-293-2575_z5gpio.jpg" alt="">
+  <img loading="lazy" src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/w_1000,c_limit/v1782265382/UCON-2023-BBQ-237-4340_cdqcv6.jpg" alt="">
+  <img loading="lazy" src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/w_1000,c_limit/v1782265387/UCON-2024-BBQ-151-0394_xvjafa.jpg" alt="">
+  <img loading="lazy" src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/w_1000,c_limit/v1782265370/UCON-2022-BBQ-388-9530_r7csuo.jpg" alt="">
 </a>
 
 <section class="tint-paper">
   <div class="container">
     <div class="section-label"><span class="dot"></span><span>Who's coming</span></div>
-    <h2 class="section-title">The Union Contractors Industry — All in One Place</h2>
-    <p class="section-sub" style="margin-bottom:28px;">~1,200 general contractors, subcontractors, tradespeople, project managers, and industry partners from across Northern California. If you work in construction, your people are going to be there.</p>
+    <h2 class="section-title">The Whole Crew, One Camp</h2>
     <div style="display:flex;flex-wrap:wrap;gap:10px;">
       <span class="tag">General contractors</span>
       <span class="tag">Subcontractors</span>
@@ -236,39 +308,32 @@
       <span class="tag">Project managers</span>
       <span class="tag">Industry vendors</span>
       <span class="tag">Associate members</span>
-      <span class="tag">Families welcome</span>
+      <span class="tag">Office teams</span>
     </div>
+    <p style="margin-top:20px;font-size:13px;color:var(--mut);font-style:italic;">Names and companies coming soon. Attendee list updated weekly as registrations come in.</p>
   </div>
 </section>
 
 <section>
   <div class="container">
     <div class="section-label"><span class="dot"></span><span>Why you'll be there</span></div>
-    <h2 class="section-title">California's Contractors, Together Since 1980</h2>
-    <p class="section-sub">What began as a small gathering has grown into the industry's signature summer event — the one place where general contractors, subcontractors, and the people who keep California building all show up in the same place, at the same fire.</p>
+    <h2 class="section-title">Set Up Camp, August 6</h2>
     <div class="card-grid">
-      <div class="feature-card">
-        <div class="feature-ico ember"><i class="ti ti-flame" aria-hidden="true"></i></div>
-        <h3>Award-winning BBQ &amp; chili</h3>
-        <p>Legendary barbecue, 16 teams competing for the Chili Cook-Off trophy, and a tasting vote that's yours to cast. This is what we come for.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-ico"><i class="ti ti-music" aria-hidden="true"></i></div>
-        <h3>Live music &amp; camp games</h3>
-        <p>Live entertainment, lawn games, and good conversation all evening long — the full camp experience, no agenda required.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-ico gold"><i class="ti ti-users" aria-hidden="true"></i></div>
-        <h3>Your whole industry</h3>
-        <p>~1,200 contractors, tradespeople, and industry partners in the same place. The connections you make here last all year.</p>
-      </div>
+      <div class="feature-card"><div class="feature-ico ember"><i class="ti ti-flame" aria-hidden="true"></i></div><h3>The Pit</h3><p>Legendary BBQ buffet, 16 teams throwing down in the Chili Cook-Off, and a tasting vote that's yours. You came hungry. Good.</p></div>
+      <div class="feature-card"><div class="feature-ico"><i class="ti ti-music" aria-hidden="true"></i></div><h3>More Than Dinner</h3><p>Live music, lawn games, and enough time to actually catch up with people. No agenda. No badge scanner. Just a great evening.</p></div>
+      <div class="feature-card"><div class="feature-ico gold"><i class="ti ti-users" aria-hidden="true"></i></div><h3>Your Whole Industry, Right Here</h3><p>~1,200 contractors, subs, and industry partners in one spot. The handshake you've been meaning to make for two years? Tonight's the night.</p></div>
+    </div>
+    <div class="about-photos" style="margin-top:28px;">
+      <img loading="lazy" src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/w_700,c_limit/v1782265372/UCON-2024-BBQ-291-0615_joprik.jpg" alt="Guests at a past UCON BBQ">
+      <img loading="lazy" src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/w_700,c_limit/v1782265380/UCON-2023-BBQ-153-4172_u4jxwc.jpg" alt="Guests at a past UCON BBQ">
+      <img loading="lazy" src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/w_700,c_limit/v1782265379/UCON-2024-BBQ-216-0468_k5no03.jpg" alt="Guests at a past UCON BBQ">
     </div>
   </div>
 </section>
 
 <div class="cta-block">
-  <h2>Join Us August 6</h2>
-  <p>Grab your tickets before early-bird pricing runs out.</p>
+  <h2>August 6. Make Camp.</h2>
+  <p>Early-bird pricing is gone once it's gone. Don't be the one explaining to your crew why you missed it.</p>
   <div class="cta-inner"><a class="btn-cream" href="https://www.unitedcontractors.org/event-registration/2026-annual-bbq-registration">Get tickets</a><a class="btn-cream-out" href="chili-cookoff.html">Meet the chili teams</a></div>
 </div>
 </main>
@@ -298,7 +363,7 @@
       <div class="footer-brand">
         <a href="https://www.unitedcontractors.org" target="_blank" rel="noopener" aria-label="United Contractors"><img class="footer-ucon-logo" src="https://res.cloudinary.com/dhqtiaubo/image/upload/q_auto/f_auto/v1777169497/UnitedContractorsLogo_zf9ekd.png" alt="United Contractors (UCON)"></a>
         <h3>2026 BBQ &amp; Chili Cook-Off</h3>
-        <p>UCON's most-loved tradition since 1980 — good food, friendly chili rivalry, and great company.</p>
+        <p>UCON's most-loved tradition since 1980: good food, friendly chili rivalry, and great company.</p>
         <p>Email <a href="mailto:events@unitedcontractors.org">events@unitedcontractors.org</a><br>Call <a href="tel:+19258557900">(925) 855-7900</a></p>
       </div>
       <div class="footer-col"><h4>Navigate</h4>
@@ -308,7 +373,7 @@
         <a href="about.html#venue">Venue &amp; parking</a><a href="about.html#schedule">Schedule</a><a href="chili-cookoff.html">About the cook-off</a><a href="https://www.unitedcontractors.org" target="_blank" rel="noopener">About UCON</a>
       </div>
       <div class="footer-col"><h4>Contact</h4>
-        <a href="mailto:events@unitedcontractors.org">events@unitedcontractors.org</a><a href="https://maps.google.com/?q=4501+Pleasanton+Ave,+Pleasanton,+CA+94566" target="_blank" rel="noopener">Get directions</a>
+        <a href="mailto:events@unitedcontractors.org">events@unitedcontractors.org</a><a href="https://maps.google.com/?q=2005+Valley+Ave,+Pleasanton,+CA+94566" target="_blank" rel="noopener">Get directions</a>
       </div>
     </div>
     <div class="footer-bottom">© 2026 United Contractors (UCON). All rights reserved. · <a href="https://www.unitedcontractors.org" target="_blank" rel="noopener">unitedcontractors.org</a></div>
@@ -317,8 +382,9 @@
 <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">↑</button>
 <a class="sticky-register" href="https://www.unitedcontractors.org/event-registration/2026-annual-bbq-registration">Get your tickets</a>
 <script src="main.js"></script>
-<script>
-/* Inline countdown fallback — only activates if main.js countdown didn't start */
+</body>
+</html>
+ne countdown fallback, only activates if main.js countdown didn't start */
 window.addEventListener('load',function(){
   var d=document.getElementById('cd-days');
   if(!d||d.textContent!=='--') return;
@@ -326,7 +392,4 @@ window.addEventListener('load',function(){
   function pad(n){return String(n).padStart(2,'0');}
   function tick(){
     var ms=t-new Date();
-    if(ms<=0){d.textContent='0';document.getElementById('cd-hours').textContent='00';document.getElementById('cd-mins').textContent='00';document.getElementById('cd-secs').textContent='00';return;}
-    d.textContent=Math.floor(ms/86400000);
-    document.getElementById('cd-hours').textContent=pad(Math.floor((ms%86400000)/3600000));
-    document.getElementById('cd-mins').textContent=pad(Math.floor((ms%3600000
+    if(ms<=0){d.textContent='0';document.getElementById('cd-hours').textContent='00';document.getElementById('cd-mins').textContent='00';document.getElementById('cd-se
