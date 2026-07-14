@@ -296,6 +296,7 @@ footer{background:var(--sageD);color:#E7ECE2;padding:48px 0 24px;}
 .sponsor-card-benefits li{font-size:14px;color:var(--ink2);padding:5px 0;display:flex;align-items:flex-start;gap:9px;border-bottom:1px solid var(--lineSoft);}
 .sponsor-card-benefits li:last-child{border-bottom:none;}
 .sponsor-card-benefits li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ember);flex-shrink:0;margin-top:6px;}
+.sponsor-card-desc{font-size:14px;color:var(--ink2);line-height:1.55;margin-bottom:14px;}
 .sponsor-thankyou{display:inline-flex;align-items:center;gap:7px;background:var(--sageL);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;color:var(--sageD);margin-top:4px;}
 .sponsor-thankyou i{font-size:14px;color:var(--ember);}
 .sponsor-logo-slot-sm{background:var(--cream);border:1px dashed var(--line);border-radius:12px;height:72px;display:flex;align-items:center;justify-content:center;color:var(--mut);font-size:12px;font-weight:600;margin-top:14px;}
@@ -345,6 +346,11 @@ footer{background:var(--sageD);color:#E7ECE2;padding:48px 0 24px;}
 .home-sponsor-tier .sponsor-logos-row{justify-content:center;gap:26px;}
 .home-sponsor-tier .sponsor-logos-row img{max-height:150px;max-width:340px;background:#fff;padding:20px 28px;border-radius:16px;box-shadow:0 5px 18px rgba(0,0,0,.09);}
 .home-sponsor-cta{text-align:center;margin-top:40px;}
+.pin-feature{display:flex;align-items:center;gap:40px;flex-wrap:wrap;justify-content:center;margin-top:28px;}
+.pin-feature img{width:240px;max-width:62vw;height:auto;filter:drop-shadow(0 10px 26px rgba(0,0,0,.2));}
+.pin-feature-text{flex:1;min-width:280px;}
+.pin-feature-text p{font-size:17px;line-height:1.65;color:var(--ink2);}
+.pin-badge{display:inline-block;background:var(--ember);color:#fff;font-family:var(--font-body);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:12px;}
 @media(max-width:600px){
   .home-sponsor-tier .sponsor-logos-row img{max-height:110px;max-width:80vw;padding:16px 20px;}
 }
