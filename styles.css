@@ -20,7 +20,7 @@
   --font-script:'Caveat',cursive;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-html{overflow-x:hidden;scroll-behavior:smooth;}
+html{overflow-x:clip;scroll-behavior:smooth;}
 body{font-family:var(--font-body);background:var(--cream);color:var(--ink);font-size:16px;line-height:1.65;}
 img{max-width:100%;display:block;}
 a{color:inherit;text-decoration:none;}
@@ -710,7 +710,7 @@ header.nav-over-hero{position:fixed;top:0;left:0;right:0;}
 header.nav-over-hero nav{background:rgba(251,243,228,.80);backdrop-filter:blur(8px);border-bottom:1px solid rgba(231,214,188,.7);transition:background .3s ease,border-color .3s ease;}
 header.nav-over-hero.scrolled nav{background:rgba(251,243,228,.97);backdrop-filter:blur(8px);border-bottom-color:var(--line);}
 /* ---------- Fixed registration-closed announcement bar ---------- */
-.reg-banner{position:fixed;top:0;left:0;right:0;z-index:1100;min-height:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 10px;background:var(--emberD);color:#fff;font-family:var(--font-body);font-size:14px;font-weight:600;line-height:1.25;padding:7px 18px;text-align:center;}
+.reg-banner{position:fixed;top:0;left:0;right:0;z-index:1100;min-height:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 10px;background:var(--emberD);color:#fff;font-family:var(--font-body);font-size:14px;font-weight:600;line-height:1.25;padding:7px 18px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.22);}
 .reg-banner a{color:#fff;text-decoration:underline;white-space:nowrap;}
 body{padding-top:40px;}
 header{top:40px;}
