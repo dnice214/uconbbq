@@ -2,13 +2,14 @@
 
 The site flips between two states: **online registration OPEN** and **online registration CLOSED (onsite tickets only)**. This file records how to switch, so the closed version is never lost.
 
-## Current state: OPEN
-- "Get tickets" / "Get your tickets" buttons are present (nav bar, mobile menu, floating bottom bar, homepage hero, and closing CTA blocks).
-- They link to the real registration page:
-  `https://www.unitedcontractors.org/event-registration/2026-annual-bbq-registration`
-- Tickets page shows Early Bird (sold out), Standard, and Onsite normally.
-- No "registration closed" announcement banner.
-- Restored from git commit **cd9dfb1 ("Map Update")**.
+## Current state: CLOSED (officially closed)
+- Fixed red announcement banner pinned to the top of every page.
+- All "Get tickets" / "Register" buttons removed sitewide.
+- Tickets page: Early Bird = **Sold out**, Standard = **Closed**, Onsite = available at the door.
+- Reinstated from git commit **bcc5742 ("Reg Closed Update")**, then Standard switched from "Sold out" to "Closed" and the FAQ July 31 / July 16 deadline lines removed.
+
+### The OPEN version is saved at git commit **cd9dfb1 ("Map Update")**
+- Buttons present and linked to `https://www.unitedcontractors.org/event-registration/2026-annual-bbq-registration`; no banner. Restore those 8 files from cd9dfb1 (or ask) to reopen.
 
 ## The CLOSED version is saved in git history
 Commit **bcc5742 ("Reg Closed Update")** contains the full closed design:
