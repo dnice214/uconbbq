@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded',function(){
 document.addEventListener('DOMContentLoaded',function(){
   var grid=document.getElementById('cd-days');
   if(!grid) return;
-  var target=new Date('2026-08-06T16:30:00-07:00');
+  var target=new Date('2027-08-05T16:30:00-07:00');
   function pad(n){return String(n).padStart(2,'0');}
   function update(){
     var diff=target-new Date();

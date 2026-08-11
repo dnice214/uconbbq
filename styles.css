@@ -710,7 +710,8 @@ header.nav-over-hero{position:fixed;top:0;left:0;right:0;}
 header.nav-over-hero nav{background:rgba(251,243,228,.80);backdrop-filter:blur(8px);border-bottom:1px solid rgba(231,214,188,.7);transition:background .3s ease,border-color .3s ease;}
 header.nav-over-hero.scrolled nav{background:rgba(251,243,228,.97);backdrop-filter:blur(8px);border-bottom-color:var(--line);}
 /* ---------- Post-event thank-you band ---------- */
-.post-event{background:var(--sageD);color:#fff;text-align:center;padding:120px 24px 48px;}
+.post-event{background:var(--sageD);color:#fff;text-align:center;padding:44px 24px;}
+header.nav-over-hero + main .post-event{padding-top:120px;}
 .post-event-star{color:var(--gold);font-size:22px;letter-spacing:6px;margin-bottom:8px;}
 .post-event h2{font-family:var(--font-head);color:var(--gold);font-size:clamp(26px,4vw,40px);text-transform:uppercase;letter-spacing:1px;line-height:1.1;margin-bottom:14px;}
 .post-event p{font-size:18px;max-width:700px;margin:0 auto 24px;line-height:1.55;}
